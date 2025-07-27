@@ -40,3 +40,6 @@ numbering should start from 1 for each new web request.
 
 ### Challenge 4: Database Configuration
 **Issue**: The application is configured to use MySQL, but tests fail due to missing database connection. Configure the application to use an in-memory H2 database for testing.
+
+### Challenge 5: Transaction Management
+**Issue**: Audit logs should be saved, even when exceptions are thrown.
