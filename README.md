@@ -39,7 +39,11 @@ numbering should start from 1 for each new web request.
 **Issue**: Add the calling class name to the log output, verify by looking at the output in the `logs/` directory.
 
 ### Challenge 4: Database Configuration
+**Test**: `src/test/java/com/interview/challenge4/InMemoryDatabaseTest.java`
+
 **Issue**: The application is configured to use MySQL, but tests fail due to missing database connection. Configure the application to use an in-memory H2 database for testing.
 
 ### Challenge 5: Transaction Management
+**Test**: `src/test/java/com/interview/challenge5/TransactionManagementTest.java`
+
 **Issue**: Audit logs should be saved, even when exceptions are thrown.
