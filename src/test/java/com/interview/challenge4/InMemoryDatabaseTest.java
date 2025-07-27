@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 /**
- * Challenge 5: In-Memory Test Database
+ * Challenge 4: In-Memory Test Database
  * 
  * Update the application to support using an in-memory database for tests and insert seed data for this test.
  */

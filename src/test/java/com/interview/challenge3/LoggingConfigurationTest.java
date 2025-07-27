@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
 /**
- * Challenge 4: Logging Configuration Test
+ * Challenge 3: Logging Configuration Test
  * 
  * Add the calling class name to the log output
  */
