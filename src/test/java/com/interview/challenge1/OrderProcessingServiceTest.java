@@ -14,8 +14,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 /**
  * Challenge 1: Order Processing Test
  * 
- * Tests order processing functionality through HTTP requests.
- * Order numbering should start from 1 for each new request.
+ * When the tests are ran individually they pass, but fail when ran together (in the same process). Order numbering
+ * should start from 1 for each new web request.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("unit")

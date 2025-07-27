@@ -1,12 +1,18 @@
 # Java Debugging Challenge
 
-This is a Java debugging exercise with 5 challenges that need to be fixed.
+This is a Java debugging exercise with 4 challenges that need to be fixed.
 
 ## Prerequisites
 
 - Java 17+
 - Maven 3.6+
 - IDE of your choice
+
+## Rules
+
+* You are NOT allowed to use AI-assistance (directly or via search engines). We recommend using DuckDuckGo.com for searching or add `-AI` (minus A I) to the end of your google queries).
+* You are allowed and encouraged to read documentation on various languages, libraries, and frameworks in order to solve the challenges.
+* The interviewer will answer any questions you have or provide hints on request but if you are stuck, you should skip the challenge and try another.
 
 ## Getting Started
 
@@ -17,42 +23,20 @@ This is a Java debugging exercise with 5 challenges that need to be fixed.
 ## Challenges
 
 ### Challenge 1: Order Processing Test
-**Test**: `src/test/java/com/interview/challenge2/OrderProcessingServiceTest.java`
+**Test**: `src/test/java/com/interview/challenge1/OrderProcessingServiceTest.java`
 
-**Issue**: Test is failing - order numbers are not behaving as expected.
+**Issue**: When the tests are ran individually they pass, but fail when ran together (in the same process). Order 
+numbering should start from 1 for each new web request.
 
-### Challenge 2: Request Context Test  
-**Test**: `src/test/java/com/interview/challenge3/RequestContextTest.java`
-
-**Issue**: Test is failing - request context information appears to be leaking between HTTP requests.
-
-### Challenge 3: Product Serialization Test
-**Test**: `src/test/java/com/interview/challenge4/ProductSerializationTest.java`
+### Challenge 2: Product Serialization Test
+**Test**: `src/test/java/com/interview/challenge2/ProductSerializationTest.java`
 
 **Issue**: Test is failing - JSON serialization and deserialization is not working as expected.
 
-### Challenge 4: Logging Configuration Test
-**Test**: `src/test/java/com/interview/challenge5/LoggingConfigurationTest.java`
+### Challenge 3: Logging Configuration Test
+**Test**: `src/test/java/com/interview/challenge3/LoggingConfigurationTest.java`
 
-**Issue**: Log format seems to be missing information that would be helpful for debugging.
+**Issue**: Add the calling class name to the log output, verify by looking at the output in the `logs/` directory.
 
-### Challenge 5: Database Configuration
+### Challenge 4: Database Configuration
 **Issue**: The application is configured to use MySQL, but tests fail due to missing database connection. Configure the application to use an in-memory H2 database for testing.
-
-## Running Tests
-
-```bash
-# Run individual tests (after fixing Challenge 1)
-mvn test -Dtest=OrderProcessingServiceTest
-mvn test -Dtest=RequestContextTest
-mvn test -Dtest=ProductSerializationTest
-mvn test -Dtest=LoggingConfigurationTest
-mvn test -Dtest=InMemoryDatabaseTest
-
-# Run all tests
-mvn test
-```
-
-## Goal
-
-Fix the issues so that all tests pass. Focus on understanding the root cause of each problem.

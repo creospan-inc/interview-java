@@ -1,7 +1,6 @@
-package com.interview.challenge5;
+package com.interview.challenge4;
 
 import com.interview.repository.UserRepository;
-import com.interview.service.LoggingService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

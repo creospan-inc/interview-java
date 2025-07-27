@@ -1,4 +1,4 @@
-package com.interview.challenge3;
+package com.interview.challenge2;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.interview.model.Product;
@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 /**
  * Challenge 3: Product Serialization Test
  * 
- * Tests JSON serialization and deserialization of Product objects.
+ * Test is failing - JSON serialization and deserialization is not working as expected.
  */
 @SpringBootTest
 @ActiveProfiles("unit")

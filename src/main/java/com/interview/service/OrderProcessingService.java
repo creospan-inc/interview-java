@@ -3,10 +3,6 @@ package com.interview.service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * Service that processes orders and assigns sequential order numbers.
- * Order numbering should start from 1 for each new request.
- */
 @Service
 public class OrderProcessingService {
     
