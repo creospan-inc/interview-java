@@ -12,8 +12,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * Challenge 3: Product Serialization Test
- * 
+ * Challenge 2: Product Serialization Test
+ *
  * Test is failing - JSON serialization and deserialization is not working as expected.
  */
 @SpringBootTest
@@ -65,5 +65,17 @@ class ProductSerializationTest {
         assertEquals(original.getProductName(), deserialized.getProductName());
         assertEquals(original.getPrice(), deserialized.getPrice());
         assertEquals(original.getActive(), deserialized.getActive());
+    }
+    
+    @Test
+    void testCategorySerialization() throws Exception {
+        // Test budget category product
+        Product budgetProduct = new Product("PROD-100", "Cheap Widget", new BigDecimal("9.99"), true);
+        assertEquals("budget", budgetProduct.getCategory()); // Internal category should be "budget"
+        
+        String json = objectMapper.writeValueAsString(budgetProduct);
+        System.out.println("Budget product JSON: " + json);
+
+        assertTrue(json.contains("\"product_category\":\"budget\""));
     }
 }
