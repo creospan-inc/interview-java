@@ -14,6 +14,7 @@ import java.util.Optional;
  * Repository for User entity operations.
  */
 @Repository
+@Profile("db")
 public interface UserRepository extends JpaRepository<User, Long> {
     
     Optional<User> findByUsername(String username);
