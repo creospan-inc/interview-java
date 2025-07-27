@@ -27,7 +27,6 @@ public class Product {
     @JsonProperty("is_active")
     private Boolean active;
     
-    // public Product() {}
     public Product(String productId, String productName, BigDecimal price, Boolean active) {
         this.productId = productId;
         this.productName = productName;
